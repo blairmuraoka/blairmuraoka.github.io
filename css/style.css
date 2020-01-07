@@ -1,0 +1,119 @@
+body {
+	margin: 0;
+	font-family: 'Roboto', sans-serif;
+}
+
+#navbar {
+	height: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #304269;
+}
+
+#navbar a {
+	color: white;
+}
+
+#about_me {
+	background-color: #e6f1fa;
+	overflow: hidden;
+	padding: 75px 0;
+}
+
+.container {
+	margin-left: 20%;
+	margin-right: 20%;
+}
+
+.item-content {
+	display: inline-flex;
+}
+
+#experience {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	background-color: #38528a;
+	overflow: hidden;
+	color: white;
+	padding: 75px 0;
+}
+
+#education, 
+#coursework {
+	position: relative; 
+	width: 49%;
+}
+
+#coursework-list-wrapper {
+	display: inline-flex; 
+	width: 100%;
+}
+.coursework-col {
+	position: relative; 
+	width: 50%;
+}
+
+#about-me-content,
+#education-content {
+	padding: 0 15px;
+} img {
+	padding: 15px 0;
+} a {
+	color: #fff;
+}
+
+.experience-header {
+	text-align: center;
+	background-color: #304269;
+	color: #fff;
+	padding: 10px 0;
+	margin: 0 10px;
+}
+
+@media screen and (max-width: 800px) {
+	.container {
+		margin-left: 10%;
+		margin-right: 10%;
+	}
+	.item {
+		text-align: center;
+	}
+
+	.item-content {
+		display: block;
+	}
+
+	.item-content p {
+		text-align: justify;
+	}
+
+	#experience {
+		display: block;
+		padding: 15px 0;
+	}
+
+	#coursework, 
+	#education {
+		padding: 25px 0;
+		width: 100%;
+	}
+
+	#coursework-list-wrapper {
+		display: block;
+		margin: 0 25%;
+	}
+
+	#coursework ul {
+		display: inline-block;
+		text-align: left;
+		list-style: none;
+		padding-left: 20px;
+	}
+
+	.coursework-col {
+		position: static;
+		width: 100%;
+	}
+}
