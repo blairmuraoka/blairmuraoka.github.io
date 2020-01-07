@@ -4,6 +4,9 @@ body {
 }
 
 #navbar {
+	position: fixed;
+	top: 0;
+	width: 100%;
 	height: 50px;
 	display: flex;
 	align-items: center;
@@ -15,29 +18,43 @@ body {
 	color: white;
 }
 
+#content {
+	margin-top: 50px;
+}
+
 #about_me {
 	background-color: #e6f1fa;
 	overflow: hidden;
 	padding: 75px 0;
 }
 
+#about-me-content {
+	font-size: 20px;
+}
+
 .container {
-	margin-left: 20%;
-	margin-right: 20%;
+	margin-left: 15%;
+	margin-right: 15%;
 }
 
 .item-content {
 	display: inline-flex;
 }
 
+#experience_wrapper {
+	background-color: #38528a;
+}
+
 #experience {
 	display: flex;
 	justify-content: center;
-	width: 100%;
 	background-color: #38528a;
 	overflow: hidden;
 	color: white;
-	padding: 75px 0;
+	padding: 50px 0;
+}
+#education {
+	 text-align: center;
 }
 
 #education, 
@@ -57,7 +74,7 @@ body {
 
 #about-me-content,
 #education-content {
-	padding: 0 15px;
+	padding: 0 70px;
 } img {
 	padding: 15px 0;
 } a {
@@ -74,8 +91,8 @@ body {
 
 @media screen and (max-width: 800px) {
 	.container {
-		margin-left: 10%;
-		margin-right: 10%;
+		margin-left: 0%;
+		margin-right: 0%;
 	}
 	.item {
 		text-align: center;
@@ -91,12 +108,16 @@ body {
 
 	#experience {
 		display: block;
-		padding: 15px 0;
+		padding: 0;
+	}
+
+	.experience-header {
+		margin: 0;
 	}
 
 	#coursework, 
 	#education {
-		padding: 25px 0;
+		padding: 0;
 		width: 100%;
 	}
 
@@ -108,12 +129,11 @@ body {
 	#coursework ul {
 		display: inline-block;
 		text-align: left;
-		list-style: none;
 		padding-left: 20px;
+		margin-bottom: 0;
 	}
 
-	.coursework-col {
-		position: static;
-		width: 100%;
+	#coursework-list-b {
+		margin-top: 0;
 	}
 }
