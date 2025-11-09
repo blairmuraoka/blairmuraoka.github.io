@@ -12,6 +12,7 @@ const boundaries = {
 };
 console.log(boundaries)
 let firstTranslate = true;
+let colorBit = true;
 
 // garou.style.right = '969px'
 setInterval(() => {
@@ -30,7 +31,13 @@ setInterval(() => {
             (curr.x == boundaries.xMin && curr.y == boundaries.yMax) ||   // Bottom right
             (curr.x == boundaries.xMax && curr.y == boundaries.yMax)) {   // Bottom left
             console.log('Garuuu')
-            document.body.style.background = "#044";
+            colorBit = !colorBit
+            if (colorBit) {
+                document.body.style.background = "#000";
+            }
+            else {
+                document.body.style.background = "#044";
+	    }
         }
     }
     else {
